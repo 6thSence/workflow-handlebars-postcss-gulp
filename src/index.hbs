@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html class="layout">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/bundle.css">
+    <title>Template</title>
+</head>
+
+<body class="layout__body">
+
+    {{> header}} 
+
+    {{> side}}
+    lorem500
+    <div class="content">
+        <div class="content__in">
+            In.
+        </div>
+        <p>Hello {{firstName}}</p>
+        <p>HELLO! {{capitals firstName}}</p>
+    </div>
+    {{> footer}}
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

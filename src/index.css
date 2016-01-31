@@ -1,0 +1,23 @@
+.layout__body {
+    margin: 0;
+    padding: 0;
+    font: 36px/36px SuisseIntl, Helvetica, sans-serif;
+}
+
+.content {
+    &__in {
+    min-size: 40px;
+    background: #f00;
+    }
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    size: 150px 100px;
+    display: flex;
+    background: #4eba0f;
+    opacity: .5;
+    position: absolute;
+    margin: auto;
+}

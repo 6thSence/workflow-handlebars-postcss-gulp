@@ -1,0 +1,9 @@
+.aside {
+    top: 40%;
+    left: 0;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #4eba0f;
+    opacity: .5;
+}
