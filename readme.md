@@ -49,4 +49,4 @@ You must have installed: `node`, `npm`, `gulp`.
 * `static/` build directory 
 * `config.js` configuration file 
 * `eslintrc.json` eslint rules
-* `stylelintrc.json` eslint rules
+* `stylelintrc.json` stylilint rules
