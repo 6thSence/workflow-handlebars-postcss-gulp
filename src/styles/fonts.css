@@ -1,24 +1,24 @@
 @font-face {
     font-family: 'SuisseIntl';
-    src: url('../fonts/SuisseIntl-CondNo-Conflict.woff') format('woff');
+    src: url(../fonts/SuisseIntl-CondNo-Conflict.woff) format('woff');
     font-weight: 400;
-}
+    }
 
 @font-face {
     font-family: 'SuisseIntl';
-    src: url('../fonts/SuisseIntl-CondBoldNo-Conflict.woff') format('woff');
+    src: url(../fonts/SuisseIntl-CondBoldNo-Conflict.woff) format('woff');
     font-weight: 600;
-}
+    }
 
 @font-face {
     font-family: 'Brioni';
-    src: url('https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-023686-007231-000361-1416385912.woff') format('woff');
+    src: url(https://s3-eu-west-1.amazonaws.com/fonts-ireland.typotheque.com/WF-023686-007231-000361-1416385912.woff) format('woff');
     font-style: italic;
     font-weight: 300;
     font-stretch: normal;
-}
+    }
 
 @font-face {
     font-family: 'SuisseStensil';
-    src: url('../fonts/SuisseStencilCond-Bold-Web.woff') format('woff'), url('../fonts/SuisseStencilCond-Bold-Web.woff2') format('woff2');
-}
+    src: url(../fonts/SuisseStencilCond-Bold-Web.woff) format('woff'), url(../fonts/SuisseStencilCond-Bold-Web.woff2) format('woff2');
+    }
