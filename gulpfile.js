@@ -29,12 +29,15 @@ const paths = {
     styles: ['./src/**/*.css'],
     scripts: ['./src/**/*.js'],
     scriptsLint: ['**/*.js', '!node_modules/**/*', '!static/**/*'],
-    templates: 'src/templates/**/*.hbs'
+    templates: 'src/templates/**/*.hbs',
+    assets: 'src/**/*.png',
+    contextJson: 'src/test.json'
 };
 
 switch (config.env) {
     case 'development':
-        gulp.task('default', ['fonts',
+        gulp.task('default', [
+            'fonts',
             'scripts',
             'styles',
             'compile',
@@ -43,7 +46,8 @@ switch (config.env) {
         ]);
         break;
     case 'production':
-        gulp.task('default', ['fonts',
+        gulp.task('default', [
+            'fonts',
             'scripts',
             'styles',
             'compile'
@@ -132,10 +136,23 @@ gulp.task('fonts', () => {
         .pipe(gulp.dest(`${paths.buildDir}/fonts`));
 });
 
+gulp.task('assets', () => {
+    glob(paths.assets, (err, files) => {
+        if (!err) {
+            gulp.src(files)
+                .pipe(gulp.dest(`${paths.buildDir}/assets`));
+        } else {
+            throw err;
+        }
+    });
+});
+
 gulp.task('watch', () => {
     gulp.watch(paths.handlebars, ['compile']);
     gulp.watch(paths.styles, ['styles']);
     gulp.watch(paths.scripts, ['scripts']);
+    gulp.watch(paths.contextJson)
+        .on('change', browserSync.reload);
     gulp.watch(`${paths.buildDir}/**/*`)
         .on('change', browserSync.reload);
 });
