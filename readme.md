@@ -24,7 +24,7 @@ You must have installed: `node`, `npm`, `gulp`.
 3. `npm i`
 4. `gulp` 
 ... or
-`NODE_ENV=prodaction gulp`
+`NODE_ENV=production gulp`
 (for production version)
 
 ---
